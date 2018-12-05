@@ -36,6 +36,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/MazeDrivers/MotorEncoder.c</locationURI>
 		</link>
 		<link>
+			<name>PWM.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/inc/PWM.c</locationURI>
+		</link>
+		<link>
 			<name>SysTick.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/inc/SysTick.c</locationURI>

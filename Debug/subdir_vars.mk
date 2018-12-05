@@ -9,6 +9,7 @@ CMD_SRCS += \
 C_SRCS += \
 /Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/LineSensors.c \
 /Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/MotorEncoder.c \
+/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/inc/PWM.c \
 /Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/inc/SysTick.c \
 ../main.c \
 ../startup_msp432p401r_ccs.c \
@@ -17,6 +18,7 @@ C_SRCS += \
 C_DEPS += \
 ./LineSensors.d \
 ./MotorEncoder.d \
+./PWM.d \
 ./SysTick.d \
 ./main.d \
 ./startup_msp432p401r_ccs.d \
@@ -25,6 +27,7 @@ C_DEPS += \
 OBJS += \
 ./LineSensors.obj \
 ./MotorEncoder.obj \
+./PWM.obj \
 ./SysTick.obj \
 ./main.obj \
 ./startup_msp432p401r_ccs.obj \
@@ -33,6 +36,7 @@ OBJS += \
 OBJS__QUOTED += \
 "LineSensors.obj" \
 "MotorEncoder.obj" \
+"PWM.obj" \
 "SysTick.obj" \
 "main.obj" \
 "startup_msp432p401r_ccs.obj" \
@@ -41,6 +45,7 @@ OBJS__QUOTED += \
 C_DEPS__QUOTED += \
 "LineSensors.d" \
 "MotorEncoder.d" \
+"PWM.d" \
 "SysTick.d" \
 "main.d" \
 "startup_msp432p401r_ccs.d" \
@@ -49,6 +54,7 @@ C_DEPS__QUOTED += \
 C_SRCS__QUOTED += \
 "/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/LineSensors.c" \
 "/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/MotorEncoder.c" \
+"/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/inc/PWM.c" \
 "/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/inc/SysTick.c" \
 "../main.c" \
 "../startup_msp432p401r_ccs.c" \

@@ -10,6 +10,7 @@ GEN_CMDS__FLAG :=
 ORDERED_OBJS += \
 "./LineSensors.obj" \
 "./MotorEncoder.obj" \
+"./PWM.obj" \
 "./SysTick.obj" \
 "./main.obj" \
 "./startup_msp432p401r_ccs.obj" \
@@ -157,8 +158,8 @@ FinalMaze.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "LineSensors.obj" "MotorEncoder.obj" "SysTick.obj" "main.obj" "startup_msp432p401r_ccs.obj" "system_msp432p401r.obj" 
-	-$(RM) "LineSensors.d" "MotorEncoder.d" "SysTick.d" "main.d" "startup_msp432p401r_ccs.d" "system_msp432p401r.d" 
+	-$(RM) "LineSensors.obj" "MotorEncoder.obj" "PWM.obj" "SysTick.obj" "main.obj" "startup_msp432p401r_ccs.obj" "system_msp432p401r.obj" 
+	-$(RM) "LineSensors.d" "MotorEncoder.d" "PWM.d" "SysTick.d" "main.d" "startup_msp432p401r_ccs.d" "system_msp432p401r.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
