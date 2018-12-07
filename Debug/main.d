@@ -22,8 +22,9 @@ main.obj: ../../MazeDrivers/MotorEncoder.h
 main.obj: ../../MazeDrivers/../inc/SysTick.h
 main.obj: ../../MazeDrivers/LidarSensors.h
 main.obj: ../../MazeDrivers/BumpSwitch.h
+main.obj: ../../MazeDrivers/DriveSystem.h
+main.obj: ../../MazeDrivers/../inc/PWM.h
 main.obj: ../../inc/SysTick.h
-main.obj: ../../inc/PWM.h
 
 ../main.c: 
 /Applications/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/include/stdint.h: 
@@ -47,5 +48,6 @@ main.obj: ../../inc/PWM.h
 ../../MazeDrivers/../inc/SysTick.h: 
 ../../MazeDrivers/LidarSensors.h: 
 ../../MazeDrivers/BumpSwitch.h: 
+../../MazeDrivers/DriveSystem.h: 
+../../MazeDrivers/../inc/PWM.h: 
 ../../inc/SysTick.h: 
-../../inc/PWM.h: 

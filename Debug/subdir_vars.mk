@@ -9,6 +9,7 @@ CMD_SRCS += \
 C_SRCS += \
 /Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/inc/ADC14.c \
 /Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/BumpSwitch.c \
+/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/DriveSystem.c \
 /Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/LidarSensors.c \
 /Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/LineSensors.c \
 /Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/MotorEncoder.c \
@@ -21,6 +22,7 @@ C_SRCS += \
 C_DEPS += \
 ./ADC14.d \
 ./BumpSwitch.d \
+./DriveSystem.d \
 ./LidarSensors.d \
 ./LineSensors.d \
 ./MotorEncoder.d \
@@ -33,6 +35,7 @@ C_DEPS += \
 OBJS += \
 ./ADC14.obj \
 ./BumpSwitch.obj \
+./DriveSystem.obj \
 ./LidarSensors.obj \
 ./LineSensors.obj \
 ./MotorEncoder.obj \
@@ -45,6 +48,7 @@ OBJS += \
 OBJS__QUOTED += \
 "ADC14.obj" \
 "BumpSwitch.obj" \
+"DriveSystem.obj" \
 "LidarSensors.obj" \
 "LineSensors.obj" \
 "MotorEncoder.obj" \
@@ -57,6 +61,7 @@ OBJS__QUOTED += \
 C_DEPS__QUOTED += \
 "ADC14.d" \
 "BumpSwitch.d" \
+"DriveSystem.d" \
 "LidarSensors.d" \
 "LineSensors.d" \
 "MotorEncoder.d" \
@@ -69,6 +74,7 @@ C_DEPS__QUOTED += \
 C_SRCS__QUOTED += \
 "/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/inc/ADC14.c" \
 "/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/BumpSwitch.c" \
+"/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/DriveSystem.c" \
 "/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/LidarSensors.c" \
 "/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/LineSensors.c" \
 "/Users/davidkopala/Documents/CUBoulder/Fall2018/ECEN2440-EmbeddedLab/MazeDrivers/MotorEncoder.c" \
