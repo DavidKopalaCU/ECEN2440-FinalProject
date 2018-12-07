@@ -26,6 +26,21 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>ADC14.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/inc/ADC14.c</locationURI>
+		</link>
+		<link>
+			<name>BumpSwitch.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/MazeDrivers/BumpSwitch.c</locationURI>
+		</link>
+		<link>
+			<name>LidarSensors.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/MazeDrivers/LidarSensors.c</locationURI>
+		</link>
+		<link>
 			<name>LineSensors.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/MazeDrivers/LineSensors.c</locationURI>

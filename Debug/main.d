@@ -20,6 +20,8 @@ main.obj: ../../MazeDrivers/LineSensors.h
 main.obj: ../../MazeDrivers/../inc/SysTick.h
 main.obj: ../../MazeDrivers/MotorEncoder.h
 main.obj: ../../MazeDrivers/../inc/SysTick.h
+main.obj: ../../MazeDrivers/LidarSensors.h
+main.obj: ../../MazeDrivers/BumpSwitch.h
 main.obj: ../../inc/SysTick.h
 main.obj: ../../inc/PWM.h
 
@@ -43,5 +45,7 @@ main.obj: ../../inc/PWM.h
 ../../MazeDrivers/../inc/SysTick.h: 
 ../../MazeDrivers/MotorEncoder.h: 
 ../../MazeDrivers/../inc/SysTick.h: 
+../../MazeDrivers/LidarSensors.h: 
+../../MazeDrivers/BumpSwitch.h: 
 ../../inc/SysTick.h: 
 ../../inc/PWM.h: 

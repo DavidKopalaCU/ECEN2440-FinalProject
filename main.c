@@ -4,6 +4,8 @@
 
 #include "../MazeDrivers/LineSensors.h"
 #include "../MazeDrivers/MotorEncoder.h"
+#include "../MazeDrivers/LidarSensors.h"
+#include "../MazeDrivers/BumpSwitch.h"
 
 #include "../inc/SysTick.h"
 #include "../inc/PWM.h"
@@ -20,9 +22,12 @@ motor_encoder_t *left_encoder_p;
 int values[MAX_LINE_SENSORS] = {0, };
 
 int main_cnt = 0;
+int bmp_cnt = 0;
 
 static const uint32_t motor_period = 0xFF;
 static float right_on, left_on;
+
+void bump_interrupt(uint8_t);
 
 void main(void)
 {
@@ -55,6 +60,10 @@ void main(void)
     left_on = 0.1;
     right_on = 0.1;
     PWM_Init12(motor_period, left_on * motor_period, right_on * motor_period);
+
+    LidarSensors_Init();
+
+    BumpSwitches_Init(bump_interrupt);
 
     while (1) {
         main_cnt += 1;
@@ -89,4 +98,8 @@ void main(void)
         PWM_Duty2(right_on * motor_period);
 
     }
+}
+
+void bump_interrupt(uint8_t read) {
+    bmp_cnt++;
 }
