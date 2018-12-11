@@ -18,12 +18,13 @@ main.obj: /Applications/ti/ccsv8/ccs_base/arm/include/CMSIS/cmsis_ccs.h
 main.obj: /Applications/ti/ccsv8/ccs_base/arm/include/system_msp432p401r.h
 main.obj: ../../MazeDrivers/LineSensors.h
 main.obj: ../../MazeDrivers/../inc/SysTick.h
-main.obj: ../../MazeDrivers/MotorEncoder.h
-main.obj: ../../MazeDrivers/../inc/SysTick.h
+main.obj: ../../MazeDrivers/../MazeDrivers/DriveSystem.h
+main.obj: ../../MazeDrivers/../MazeDrivers/../MazeDrivers/MotorEncoder.h
+main.obj: ../../MazeDrivers/../MazeDrivers/../MazeDrivers/../inc/SysTick.h
+main.obj: ../../MazeDrivers/../MazeDrivers/../inc/PWM.h
 main.obj: ../../MazeDrivers/LidarSensors.h
 main.obj: ../../MazeDrivers/BumpSwitch.h
 main.obj: ../../MazeDrivers/DriveSystem.h
-main.obj: ../../MazeDrivers/../inc/PWM.h
 main.obj: ../../inc/SysTick.h
 
 ../main.c: 
@@ -44,10 +45,11 @@ main.obj: ../../inc/SysTick.h
 /Applications/ti/ccsv8/ccs_base/arm/include/system_msp432p401r.h: 
 ../../MazeDrivers/LineSensors.h: 
 ../../MazeDrivers/../inc/SysTick.h: 
-../../MazeDrivers/MotorEncoder.h: 
-../../MazeDrivers/../inc/SysTick.h: 
+../../MazeDrivers/../MazeDrivers/DriveSystem.h: 
+../../MazeDrivers/../MazeDrivers/../MazeDrivers/MotorEncoder.h: 
+../../MazeDrivers/../MazeDrivers/../MazeDrivers/../inc/SysTick.h: 
+../../MazeDrivers/../MazeDrivers/../inc/PWM.h: 
 ../../MazeDrivers/LidarSensors.h: 
 ../../MazeDrivers/BumpSwitch.h: 
 ../../MazeDrivers/DriveSystem.h: 
-../../MazeDrivers/../inc/PWM.h: 
 ../../inc/SysTick.h: 
