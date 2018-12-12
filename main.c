@@ -52,17 +52,12 @@ void dead_reckoning(void) {
 void maze(void) {
     while (1) {
             // Move forward until in front of wall
-            while((lidar_forward_val = lidar_forward_read()) < 10000) {
+            while((lidar_forward_val = lidar_forward_read()) < 9000) {
     //            drive_forward_cm(1, 0.1);
 
                 lidar_left_val = lidar_left_read();
                 lidar_right_val = lidar_right_read();
-                if (lidar_left_val > 14000) {
-//                    drive_left_speed(0.15);
-//                    drive_right_speed(0.06);
-//
-//                    uint32_t i = 0;
-//                    for (i = 0; i < 30000; i++) {}
+                if (lidar_left_val > 13500 || lidar_left_val < 3000) {
                     uint8_t left_fail_cnt = 0;
                     uint32_t left_max = 0;
                     while (left_fail_cnt < 1) {
@@ -75,12 +70,7 @@ void maze(void) {
                         drive_left_speed(0.25);
                         drive_right_speed(0.05);
                     }
-                } else if (lidar_right_val > 14000) {
-//                    drive_right_speed(0.15);
-//                    drive_left_speed(0.06);
-//
-//                    uint32_t i = 0;
-//                    for (i = 0; i < 30000; i++) {}
+                } else if (lidar_right_val > 13500 || lidar_right_val < 3000) {
                     uint8_t right_fail_cnt = 0;
                     uint32_t right_max = 0;
                     while (right_fail_cnt < 1) {
